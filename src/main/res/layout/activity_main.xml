@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.foodify.foodify.MainActivity">
+
+    <ImageView
+        android:id="@+id/ivPreview"
+        android:contentDescription="preview for image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/bList"
+        android:layout_marginTop="200dp" />
+
+    <ImageButton
+        android:id="@+id/bImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/bList"
+        android:layout_marginBottom="300dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:contentDescription="Take new photo to inspect"
+        android:paddingBottom="0dp"
+        android:scaleType="fitCenter"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:visibility="visible"
+        app:srcCompat="@drawable/new_photo" />
+
+    <ImageButton
+        android:id="@+id/bList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="120dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/colorWhite"
+        android:contentDescription="manually add food item"
+        android:cropToPadding="false"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:srcCompat="@drawable/new_manual_list" />
+</RelativeLayout>
